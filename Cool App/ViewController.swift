@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var coolImage: UIImageView!
+    @IBOutlet weak var coolBg: UIImageView!
+    @IBOutlet weak var unCool: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +25,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func unCoolToCool(sender: AnyObject) {
+        coolImage.hidden = false
+        coolBg.hidden = false
+        unCool.hidden = true
+    }
 
 }
 
